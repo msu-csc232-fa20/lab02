@@ -86,7 +86,7 @@ colonialHist.credits = 3;
 
 In this statement the integer 3 is assigned to the `credits` member of `colonialHist`. The dot operator is used to connect the member name to the structure variable it belongs to.
 
-Now let us put all of these ideas together into a program. [Sample Program 11.1](SampleProgram11-1.cpp) uses the course structure just described. This interactive program allows a student to add requested courses and keeps track of the number of credit hours for which they have enrolled. The execution is controlled by a `do-while` loop.
+Now let us put all of these ideas together into a program. [Sample Program 1](SampleProgram1.cpp) uses the course structure just described. This interactive program allows a student to add requested courses and keeps track of the number of credit hours for which they have enrolled. The execution is controlled by a `do-while` loop.
 
 Make sure that you understand the logic of this program and, in particular, how structures are used. Notice the line at the end of the while loop that reads
 
@@ -96,7 +96,7 @@ while(toupper(addclass) == 'Y');
 
 What do you think the purpose of `toupper` is?
 
-As a second example, suppose we would like a simple program that computes the area and circumference of two circles input by the user. Although we can easily do this using previously developed techniques, let us see how this can be done using structures. We will also determine which circle’s center is further from the origin. Take a look at [Sample Program 11.2](SampleProgram11-2.cpp)
+As a second example, suppose we would like a simple program that computes the area and circumference of two circles input by the user. Although we can easily do this using previously developed techniques, let us see how this can be done using structures. We will also determine which circle’s center is further from the origin. Take a look at [Sample Program 2](SampleProgram2.cpp)
 
 #### Arrays of Structures
 
@@ -183,7 +183,7 @@ If we recall what a structure declaration does, it is clear why the above code i
 
 #### Hierarchical (Nested) Structures
 
-Often it is useful  to nest one structure inside of another structure. Consider [Sample Program 11-3.cpp](SampleProgram11-3.cpp).
+Often it is useful  to nest one structure inside of another structure. Consider [Sample Program 3.cpp](SampleProgram3.cpp).
 
 Note that the sample programs in this lab so far have not been  modularized. Everything is done within the  `main` function.  In practice, this is not good structured programming. It can lead to unreadable and  overly repetitious code. To solve this problem, we need to be able to pass structures and structure members to functions. In this next section, you will see how to do this.
 
