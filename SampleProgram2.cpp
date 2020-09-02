@@ -1,11 +1,19 @@
-#include <iostream>
+/**
+ * CSC232 - Data Structures
+ * Missouri State University, Fall 2020
+ * 
+ * @brief This program demonstrates the use of structures.
+ * @file SampleProgram2.cpp
+ * @author Jim Daehn <jdaehn@missouristate.edu>
+ */
+
 #include <cmath>	// necessary for pow function
+#include <cstdlib>
 #include <iomanip>
-using namespace std;
+#include <iostream>
 
 struct circle	// declares the structure circle
 {				// This structure has 6 members 
-
 	float centerX; // x coordinate of center
 	float centerY; // y coordinate of center 
 	float radius;
@@ -20,16 +28,16 @@ int main()
 {
 	circle circ1, circ2; // defines 2 circle structure variables 
 
-	cout << "Please enter the radius of the first circle: ";
-	cin >> circ1.radius;
+	std::cout << "Please enter the radius of the first circle: ";
+	std::cin >> circ1.radius;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the x-coordinate of the center: ";
-	cin >> circ1.centerX;
+	std::cin >> circ1.centerX;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the y-coordinate of the center: ";
-	cin >> circ1.centerY;
+	std::cin >> circ1.centerY;
 
 	circ1.area = PI * pow(circ1.radius, 2.0);
 
@@ -38,18 +46,18 @@ int main()
 	circ1.distance_from_origin = sqrt(pow(circ1.centerX, 2.0)
 		                         + pow(circ1.centerY, 2.0));
 
-	cout << endl << endl;
+	std::cout << std::endl << std::endl;
 
-	cout << "Please enter the radius of the second circle: ";
-	cin >> circ2.radius;
+	std::cout << "Please enter the radius of the second circle: ";
+	std::cin >> circ2.radius;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the x-coordinate of the center: ";
-	cin >> circ2.centerX;
+	std::cin >> circ2.centerX;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the y-coordinate of the center: ";
-	cin >> circ2.centerY;
+	std::cin >> circ2.centerY;
 
 	circ2.area = PI * pow(circ2.radius, 2.0);
 
@@ -57,41 +65,41 @@ int main()
 
 	circ2.distance_from_origin = sqrt(pow(circ2.centerX, 2.0)
 								 + pow(circ2.centerY, 2.0));
-	cout << endl << endl;
+	std::cout << std::endl << std::endl;
 
 	// This next section determines which circle's center is
 	// closer to the origin
 
 	if (circ1.distance_from_origin > circ2.distance_from_origin)
 	{
-		cout << "The first circle is further from the origin"
-			 << endl << endl;
+		std::cout << "The first circle is further from the origin"
+			 << std::endl << std::endl;
 	}
 
 	else if (circ1.distance_from_origin < circ2.distance_from_origin)
 	{
-		cout << "The first circle is closer to the origin"
-			 << endl << endl;
+		std::cout << "The first circle is closer to the origin"
+			 << std::endl << std::endl;
 	}
 
 	else
-		cout << "The two circles are equidistant from the origin";
+		std::cout << "The two circles are equidistant from the origin";
 
-	cout << endl << endl;
-	cout << setprecision(2) << fixed << showpoint;
+	std::cout << std::endl << std::endl;
+	std::cout << std::setprecision(2) << std::fixed << std::showpoint;
 
-	cout << "The area of the first circle is : ";
-	cout << circ1.area << endl;
+	std::cout << "The area of the first circle is : ";
+	std::cout << circ1.area << std::endl;
 
-	cout << "The circumference of the first circle is: ";
-	cout << circ1.circumference << endl << endl;
+	std::cout << "The circumference of the first circle is: ";
+	std::cout << circ1.circumference << std::endl << std::endl;
 
 
-	cout << "The area of the second circle is : ";
-	cout << circ2.area << endl;
+	std::cout << "The area of the second circle is : ";
+	std::cout << circ2.area << std::endl;
 
-	cout << "The circumference of the second circle is: ";
-	cout << circ2.circumference << endl << endl;
+	std::cout << "The circumference of the second circle is: ";
+	std::cout << circ2.circumference << std::endl << std::endl;
 
-	return 0;
+	return EXIT_SUCCESS;
 }

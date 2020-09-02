@@ -1,7 +1,16 @@
-#include <iostream>
-#include <iomanip>
+/**
+ * CSC232 - Data Structures
+ * Missouri State University, Fall 2020
+ * 
+ * @brief This program demonstrates the use of nested structures.
+ * @file SampleProgram3.cpp
+ * @author Jim Daehn <jdaehn@missouristate.edu>
+ */
+
 #include <cmath>
-using namespace std;
+#include <cstdlib>
+#include <iomanip>
+#include <iostream>
 
 struct center_struct
 {
@@ -23,57 +32,57 @@ int main()
 {
 	circle circ1, circ2;	// defines 2 circle structure variables
 
-	cout << "Please enter the radius of the first circle: ";
-	cin >> circ1.radius;
+	std::cout << "Please enter the radius of the first circle: ";
+	std::cin >> circ1.radius;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the x-coordinate of the center: ";
-	cin >> circ1.coordinate.x;
+	std::cin >> circ1.coordinate.x;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the y-coordinate of the center: ";
-	cin >> circ1.coordinate.y;
+	std::cin >> circ1.coordinate.y;
 
 	circ1.area = PI * pow(circ1.radius, 2.0);
 	circ1.circumference = 2 * PI * circ1.radius;
 
-	cout << endl << endl;
+	std::cout << std::endl << std::endl;
 
-	cout << "Please enter the radius of the second circle: ";
-	cin >> circ2.radius;
+	std::cout << "Please enter the radius of the second circle: ";
+	std::cin >> circ2.radius;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the x-coordinate of the center: ";
-	cin >> circ2.coordinate.x;
+	std::cin >> circ2.coordinate.x;
 
-	cout << endl
+	std::cout << std::endl
 		 << "Please enter the y-coordinate of the center: ";
-	cin >> circ2.coordinate.y;
+	std::cin >> circ2.coordinate.y;
 
 	circ2.area = PI * pow(circ2.radius, 2.0);
 	circ2.circumference = 2 * PI * circ2.radius;
 
-	cout << endl << endl;
+	std::cout << std::endl << std::endl;
 
-	cout << setprecision(2) << fixed << showpoint;
+	std::cout << std::setprecision(2) << std::fixed << std::showpoint;
 
-	cout << "The area of the first circle is : ";
-	cout << circ1.area << endl;
+	std::cout << "The area of the first circle is : ";
+	std::cout << circ1.area << std::endl;
 
-	cout << "The circumference of the first circle is: ";
-	cout << circ1.circumference << endl;
+	std::cout << "The circumference of the first circle is: ";
+	std::cout << circ1.circumference << std::endl;
 
-	cout << "Circle 1 is centered at (" << circ1.coordinate.x
-		 << "," << circ1.coordinate.y << ")." << endl << endl;
+	std::cout << "Circle 1 is centered at (" << circ1.coordinate.x
+		 << "," << circ1.coordinate.y << ")." << std::endl << std::endl;
 
-	cout << "The area of the second circle is : ";
-	cout << circ2.area << endl;
+	std::cout << "The area of the second circle is : ";
+	std::cout << circ2.area << std::endl;
 
-	cout << "The circumference of the second circle is: ";
-	cout << circ2.circumference << endl;
+	std::cout << "The circumference of the second circle is: ";
+	std::cout << circ2.circumference << std::endl;
 
-	cout << "Circle 2 is centered at (" << circ2.coordinate.x
-		 << "," << circ2.coordinate.y << ")." << endl << endl;
+	std::cout << "Circle 2 is centered at (" << circ2.coordinate.x
+		 << "," << circ2.coordinate.y << ")." << std::endl << std::endl;
 
-	return 0;
+	return EXIT_SUCCESS;
 }
