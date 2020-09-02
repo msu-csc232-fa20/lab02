@@ -51,6 +51,7 @@ Variable Definition | Information Held
 All of these variables are related because they can hold information about the same course. We can package these together by creating a structure. Here is the declaration:
 
 ```c++
+struct course
 {
     std::string discipline;
     int courseNumber;
