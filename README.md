@@ -358,3 +358,44 @@ The exercises in this section have you modifying [nestedRect_struct.cpp](nestedR
     git add nestedRect_struct.cpp
     git commit -m"LAB02 - Complete exercise 4.1"
     ```
+
+At this point, if you haven't done so already, it's time to publish your `develop` branch to GitHub:
+
+```bash
+git push -u origin develop
+```
+
+Remember: We only use this form of the `git push` command the _first_ time we push our branch to GitHub. Once you've done that, to push your commits to GitHub, all that is required is a simple
+
+```bash
+git push
+```
+
+## Submission Details
+
+As usual, prior to submitting your assignment to Teams, be sure that you have committed and pushed your final changes to GitHub. Once your final changes have been pushed, create a pull request that seeks to merge the changes in your `develop` branch into your `master` branch. Once your pull request has been created, submit the URL of your assignment _repository_ (i.e., _not_ the URL of the pull request) as a Link Resource in Teams. Please note: the timestamp of the submission on Teams is used to assess any late penalties if and when warranted, _not_ the date/time you create your pull request. **No exceptions will be granted for this oversight**.
+
+### Due Date
+
+Your Teams submission is due by 11:59 PM, Friday, September 4, 2020.
+
+### Grading Rubric
+
+This assignment is worth **3 points**.
+
+Criteria          | Exceeds Expectations        | Meets Expectations             | Below Expectations | Failure                                                 |
+------------------|-----------------------------|--------------------------------|--------------------|---------------------------------------------------------|
+Pull Request (20%)| Submitted early, correct url| Submitted on-time; correct url | Incorrect URL            | No pull request was created or submitted          |
+Code Style (20%)  | Exemplary code style        | Consistent, modern coding style    | Inconsistent coding style| No style whatsoever or no code changes present|
+Correctness^ (80%)| All unit tests pass         | At least 80% of the unit tests pass| At least 60% of the unit tests pass| Less than 50% of the unit tests pass|
+
+^ _The Google Test unit runner will calculate the correctness points based purely on the fraction of tests passed_. In this lab, there are no unit tests as this lab actually won't get graded; it's merely for practice.
+
+### Late Penalty
+
+If this lab really were graded, the following late penalties would be applied if necessary:
+
+* In the first 24 hour period following the due date, this lab will be penalized 0.75 point meaning the grading starts at 2.25 (out of 3 total possible) points.
+* In the second 24 hour period following the due date, this lab will be penalized 1.50 points meaning the grading starts at 1.5 (out of 3 total possible) points.
+* After 48 hours, the assignment will not be graded and thus earns no points, i.e., 0 out of 3 possible points.
+* 
