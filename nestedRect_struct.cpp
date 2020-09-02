@@ -1,45 +1,51 @@
-#include <iostream>
+/**
+ * CSC232 - Data Structures
+ * Missouri State University, Fall 2020
+ * 
+ * @brief This program uses a structure to hold data about a rectangle.
+ *        It calculates the area and perimeter of a box.
+ * @file nestedRect_struct.cpp
+ * @authors Jim Daehn <jdaehn@missouristate.edu>
+ *          TODO: replace this line with your name here in the above format
+ */
+
+#include <cstdlib>
 #include <iomanip>
-using namespace std;
+#include <iostream>
 
-// This program uses a structure to hold data about a rectangle
-// It calculates the area and perimeter of a box
-
-// PLACE YOUR NAME HERE
-
-// Fill in code to declare a structure named dimensions that
+// TODO: Fill in code to declare a structure named dimensions that
 // contains 2 float members, length and width
 
-// Fill in code to declare a structure named rectangle that contains
+// TODO: Fill in code to declare a structure named rectangle that contains
 // 3 members, area, perimeter, and sizes. area and perimeter should be
 // floats, whereas sizes should be a dimensions structure variable
 
 int main()
 {
-	// Fill in code to define a rectangle structure variable named box.
+	// TODO: Fill in code to define a rectangle structure variable named box.
 
-	cout << "Enter the length of a rectangle: ";
+	std::cout << "Enter the length of a rectangle: ";
 
-	// Fill in code to read in the length to the appropriate location
+	// TODO: Fill in code to read in the length to the appropriate location
 
-	cout << "Enter the width of a rectangle: ";
+	std::cout << "Enter the width of a rectangle: ";
 
-	// Fill in code to read in the width to the appropriate location
+	// TODO: Fill in code to read in the width to the appropriate location
 
-	cout << endl << endl;
+	std::cout << std::endl << std::endl;
 
-	// Fill in code to compute the area and store it in the appropriate
+	// TODO: Fill in code to compute the area and store it in the appropriate
 	// location
 
-	// Fill in code to compute the perimeter and store it in the
+	// TODO: Fill in code to compute the perimeter and store it in the
 	// appropriate location
 
-	cout << fixed << showpoint << setprecision(2);
+	std::cout << std::fixed << std::showpoint << std::setprecision(2);
 
-	cout << "The area of the rectangle is " << box.attributes.area << endl;
+	std::cout << "The area of the rectangle is " << box.attributes.area << std::endl;
 
-	cout << "The perimeter of the rectangle is " << box.attributes.perimeter
-		 << endl;
+	std::cout << "The perimeter of the rectangle is " << box.attributes.perimeter
+		 << std::endl;
 
-	return 0;
+	return EXIT_SUCCESS;
 }
