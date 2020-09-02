@@ -52,10 +52,10 @@ All of these variables are related because they can hold information about the s
 
 ```c++
 {
- std::string discipline;
- int courseNumber;
- std::string courseTitle;
- short credits;
+    std::string discipline;
+    int courseNumber;
+    std::string courseTitle;
+    short credits;
 };	//note the semi-colon here
 ```
 
@@ -105,12 +105,12 @@ In the previous sample program we were interested in two instances of the `circl
 ```c++
 struct circle
 {
- float centerX; // x coordinate of center 
- float centerY; // y coordinate of center 
- float radius;
- float area;
- float circumference;
- float distance_from_origin; // distance of center from origin
+    float centerX; // x coordinate of center 
+    float centerY; // y coordinate of center 
+    float radius;
+    float area;
+    float circumference;
+    float distance_from_origin; // distance of center from origin
 };
 ```
 
@@ -125,9 +125,9 @@ Like the arrays encountered in previous coursework, you can access an array elem
 ```c++
 for (int count = 0; count < 30; count++)
 {
- cout << circn[count].centerX << endl;
- cout << circn[count].centerY << endl;
- cout << circn[count].distance_from_origin;
+    cout << circn[count].centerX << endl;
+    cout << circn[count].centerY << endl;
+    cout << circn[count].distance_from_origin;
 }
 ```
 
@@ -140,10 +140,10 @@ We have already seen numerous examples of initializing variables and arrays at t
 ```c++
 struct course
 {
- string discipline;
- int courseNumber;
- string courseTitle;
- short credits;
+    string discipline;
+    int courseNumber;
+    string courseTitle;
+    short credits;
 };
 ```
 
@@ -172,10 +172,10 @@ It is also worth pointing out that you cannot initialize a structure member in t
 ```c++
 // illegal structure declaration struct course
 {
-string discipline = "HIST";              // illegal
-int courseNumber = 302;                  // illegal 
-string courseTitle = "Colonial History"; // illegal 
-short credits = 3;                       // illegal
+    string discipline = "HIST";              // illegal
+    int courseNumber = 302;                  // illegal 
+    string courseTitle = "Colonial History"; // illegal 
+    short credits = 3;                       // illegal
 };
 ```
 
@@ -235,7 +235,7 @@ Suppose the following function  definition uses  a course structure  variable as
 ```c++
 void displayInfo(course c)
 {
-cout << c.discipline << endl; cout << c.courseNumber << endl; cout << c.courseTitle << endl; cout << c.credits << endl;
+    cout << c.discipline << endl; cout << c.courseNumber << endl; cout << c.courseTitle << endl; cout << c.credits << endl;
 }
 ```
 
